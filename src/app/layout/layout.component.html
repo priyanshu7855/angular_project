@@ -1,0 +1,23 @@
+<div class="layout">
+    <aside class="sidebar">
+      <ul>
+        <li [class.active]="activePage === 'dashboard'" (click)="navigate('dashboard')">Dashboard</li>
+        <li [class.active]="activePage === 'users'" (click)="navigate('users')">Users</li>
+        <li [class.active]="activePage === 'settings'" (click)="navigate('settings')">Settings</li>
+      </ul>
+    </aside>
+  
+    <div class="main-content">
+      <header>
+        <h1>{{ activePage | titlecase }}</h1>
+        <input type="text" placeholder="Search..." />
+        <div class="user-settings">
+          <span class="user">User</span>
+          <span class="settings">Settings</span>
+        </div>
+      </header>
+  
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

@@ -1,0 +1,28 @@
+<div class="dashboard">
+    <div class="stat-cards">
+      <div class="stat-card" *ngFor="let stat of stats">
+        <div class="card-content">
+          <i [class]="stat.icon"></i>
+          <h3>{{ stat.title }}</h3>
+          <p>{{ stat.value }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Activity Bar Chart -->
+    <div class="chart-section">
+      <h2>Monthly Activity</h2>
+      <canvas id="barChart" width="400" height="200"></canvas>
+    </div>
+  
+    <!-- Pie Chart for User Engagement -->
+    <!-- <div class="chart-section">
+      <h2>User Engagement</h2>
+      <canvas id="pieChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+ Pie Chart for User Engagement -->
+<!-- <div class="chart-section">
+    <h2>User Engagement</h2>
+    <canvas id="pieChart" width="400" height="300"></canvas>  Increased height to 300px for better visibility -->
+  <!-- </div> -->

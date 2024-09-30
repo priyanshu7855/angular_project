@@ -1,0 +1,74 @@
+.dashboard {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .stat-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .stat-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .stat-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-card i {
+    font-size: 36px;
+    color: #3498db;
+    margin-bottom: 10px;
+  }
+  
+  .stat-card h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .stat-card p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    font-weight: bold;
+  }
+  
+  .chart-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .chart-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Ensure the chart is centered */
+  }
+  
+  canvas {
+    display: block;
+    margin: 0 auto; /* Center the canvas element */
+  }
+  

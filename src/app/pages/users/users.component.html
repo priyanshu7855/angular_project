@@ -1,0 +1,21 @@
+<div class="users-page">
+    <div class="user-list">
+      <div *ngFor="let user of users" class="user-card" (click)="editUser(user)">
+        <h3>{{ user.name }}</h3>
+        <p>{{ user.email }}</p>
+      </div>
+    </div>
+  
+    <div *ngIf="selectedUser" class="user-edit">
+      <h2>Edit User: {{ selectedUser.name }}</h2>
+      <input type="text" [value]="selectedUser?.name" (input)="updateName($event)" placeholder="Name" />
+      <input type="email" [value]="selectedUser?.email" (input)="updateEmail($event)" placeholder="Email" />
+      <select [value]="selectedUser?.role" (change)="updateRole($event)">
+        <option value="Admin">Admin</option>
+        <option value="User">User</option>
+        <option value="Guest">Guest</option>
+      </select>
+      <button (click)="saveUser()">Save</button>
+    </div>
+  </div>
+  
